@@ -59,7 +59,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
+        btout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(getApplicationContext(),jsonactivity.class);
+                startActivity(in);
+            }
+        });
+
     }
+
     @Override
     public void onStart() {
         super.onStart();
